@@ -24,3 +24,6 @@ yarn-error.log*
 
 #For Dev
 /for_dev
+
+# private
+/private
