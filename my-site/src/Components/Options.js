@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { HiOutlineMail, HiOutlineDocument } from "react-icons/hi";
 import { AiOutlineGithub } from "react-icons/ai";
+import { FaLinkedin } from "react-icons/fa";
 import styles from "../Styles/Options.module.css";
+import resume from "../Other/resume.pdf";
 
 function Mail() {
   const [text, setText] = useState("Send me an email");
@@ -14,7 +16,7 @@ function Mail() {
         setText("Send me an email");
       }, 5000);
     }
-  });
+  }, [copied]);
 
   if (copied) {
     return (
@@ -53,8 +55,28 @@ function Mail() {
 function Resume() {
   return (
     <div className={styles.optionContainer}>
-      <HiOutlineDocument className={styles.optionIcon} size={40} />
+      <HiOutlineDocument
+        className={styles.optionIcon}
+        size={40}
+        onClick={() => window.open(resume, "_blank")}
+      />
       <div className={styles.optionText}>Download my resume</div>
+    </div>
+  );
+}
+
+function LinkedIn() {
+  return (
+    <div className={styles.optionContainer}>
+      <FaLinkedin
+        className={styles.optionIcon}
+        size={40}
+        color="#0072b1"
+        onClick={() =>
+          window.open("https://www.linkedin.com/in/rushinotaria/", "_blank")
+        }
+      />
+      <div className={styles.optionText}>View my LinkedIn</div>
     </div>
   );
 }
@@ -62,7 +84,11 @@ function Resume() {
 function GitHub() {
   return (
     <div className={styles.optionContainer}>
-      <AiOutlineGithub className={styles.optionIcon} size={40} />
+      <AiOutlineGithub
+        className={styles.optionIcon}
+        size={40}
+        onClick={() => window.open("https://github.com/rnotaria", "_blank")}
+      />
       <div className={styles.optionText}>Check out my GitHub</div>
     </div>
   );
@@ -74,6 +100,7 @@ export default function Options() {
       <div className={styles.container2}>
         <Mail />
         <Resume />
+        <LinkedIn />
         <GitHub />
       </div>
       <hr />
