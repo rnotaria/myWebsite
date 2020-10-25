@@ -26,6 +26,8 @@
   margin-top: 10px;
   width: 250px;
 
+  cursor: pointer;
+
   color: red;
   text-align: center;
   font-family: "Nunito", sans-serif;

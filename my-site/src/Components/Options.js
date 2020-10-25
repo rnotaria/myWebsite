@@ -9,6 +9,16 @@ function Mail() {
   const [text, setText] = useState("Send me an email");
   const [copied, setCopied] = useState(false);
 
+  const onClickCopied = () => {
+    navigator.clipboard.writeText("rnotaria776@gmail.com");
+    setText("Copied!");
+  };
+  const onClickMail = () => {
+    navigator.clipboard.writeText("rnotaria776@gmail.com");
+    setText("Copied!");
+    setCopied(true);
+  };
+
   useEffect(() => {
     if (copied === true) {
       setTimeout(() => {
@@ -24,12 +34,11 @@ function Mail() {
         <HiOutlineMail
           className={styles.optionIcon}
           size={40}
-          onClick={() => {
-            navigator.clipboard.writeText("rnotaria776@gmail.com");
-            setText("Copied!");
-          }}
+          onClick={() => onClickCopied()}
         />
-        <div className={styles.optionText}>{text}</div>
+        <div className={styles.optionText} onClick={() => onClickCopied}>
+          {text}
+        </div>
       </div>
     );
   }
@@ -41,13 +50,16 @@ function Mail() {
         size={40}
         onMouseEnter={() => setText("Click to copy email")}
         onMouseLeave={() => setText("Send me an email")}
-        onClick={() => {
-          navigator.clipboard.writeText("rnotaria776@gmail.com");
-          setText("Copied!");
-          setCopied(true);
-        }}
+        onClick={() => onClickMail()}
       />
-      <div className={styles.optionText}>{text}</div>
+      <div
+        className={styles.optionText}
+        onMouseEnter={() => setText("Click to copy email")}
+        onMouseLeave={() => setText("Send me an email")}
+        onClick={() => onClickMail()}
+      >
+        {text}
+      </div>
     </div>
   );
 }
@@ -60,7 +72,12 @@ function Resume() {
         size={40}
         onClick={() => window.open(resume, "_blank")}
       />
-      <div className={styles.optionText}>Download my resume</div>
+      <div
+        className={styles.optionText}
+        onClick={() => window.open(resume, "_blank")}
+      >
+        Download my resume
+      </div>
     </div>
   );
 }
@@ -76,7 +93,14 @@ function LinkedIn() {
           window.open("https://www.linkedin.com/in/rushinotaria/", "_blank")
         }
       />
-      <div className={styles.optionText}>View my LinkedIn</div>
+      <div
+        className={styles.optionText}
+        onClick={() =>
+          window.open("https://www.linkedin.com/in/rushinotaria/", "_blank")
+        }
+      >
+        View my LinkedIn
+      </div>
     </div>
   );
 }
@@ -89,7 +113,12 @@ function GitHub() {
         size={40}
         onClick={() => window.open("https://github.com/rnotaria", "_blank")}
       />
-      <div className={styles.optionText}>Check out my GitHub</div>
+      <div
+        className={styles.optionText}
+        onClick={() => window.open("https://github.com/rnotaria", "_blank")}
+      >
+        Check out my GitHub
+      </div>
     </div>
   );
 }
