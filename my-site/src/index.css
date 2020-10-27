@@ -11,7 +11,7 @@ body {
   -o-animation: fadein 1s; /* Opera < 12.1 */
   animation: fadein 1s;
 
-  background: url(images/noise.jpg);
+  background: url(Other/images/noise.jpg);
   min-width: 800px;
 }
 

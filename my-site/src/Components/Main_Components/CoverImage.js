@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "../Styles/CoverImage.module.css";
-import skyline from "../images/skyline.jpg";
+import styles from "../../Styles/CoverImage.module.css";
+import skyline from "../../Other/images/skyline.jpg";
 
 var imageStyle = {
   width: "100%",

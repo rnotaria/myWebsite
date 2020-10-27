@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "../Styles/Profile.module.css";
-import profilePic from "../images/profilePic.jpg";
+import styles from "../../Styles/Profile.module.css";
+import profilePic from "../../Other/images/profilePic.jpg";
 
-export default function NavBar() {
+export default function Profile() {
   return (
     <div className={styles.container}>
       <div className={styles.name}>Rushi Notaria</div>

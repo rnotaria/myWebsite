@@ -1,0 +1,52 @@
+.container {
+  margin: auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+
+  max-width: 1200px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container2 {
+  display: flex;
+}
+
+.name {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.pic {
+  border-radius: 24px;
+}
+
+.subtitle {
+  margin-top: -8px;
+  margin-bottom: 24px;
+  padding-left: 2px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  color: grey;
+}
+
+.profile {
+  padding-left: 24px;
+}
+
+.profileHeader {
+  margin-bottom: 8px;
+  margin-top: 8px;
+  font-family: "Nunito", sans-serif;
+}
+
+.profileText {
+  font-family: "Nunito", sans-serif;
+  padding-bottom: 8px;
+}
