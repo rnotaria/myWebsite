@@ -9,7 +9,7 @@ export default function MySite() {
     <div>
       <CoverImage />
       <Options />
-      {/* <Profile /> */}
+      <Construction />
     </div>
   );
 }
