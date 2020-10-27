@@ -20,6 +20,13 @@
 
 .optionIcon {
   cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.optionIcon:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
 }
 
 .optionText {
@@ -27,6 +34,7 @@
   width: 250px;
 
   cursor: pointer;
+  user-select: none;
 
   color: red;
   text-align: center;
@@ -37,5 +45,11 @@ hr {
   border: none;
   height: 20px;
   border-bottom: 1px solid silver;
-  box-shadow: 0 2px 2px -2px grey;
+  box-shadow: 0 2px 3px -2px grey;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
 }
