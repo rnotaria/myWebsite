@@ -1,11 +1,6 @@
 .container {
-  margin: auto;
-  padding-left: 32px;
-  padding-right: 32px;
   margin-top: 48px;
   margin-bottom: 48px;
-
-  max-width: 1200px;
 }
 
 .container2 {

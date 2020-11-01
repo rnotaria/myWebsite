@@ -27,8 +27,7 @@ export default function Profile() {
             strict deadlines.
           </div>
           <div className={styles.profileText}>
-            During my freetime, I love learning anything and everything related
-            to astronomy from black holes to supernovae. I also enjoy creating
+            In my freetime, I love stargazing and learning about space. I also enjoy creating
             random Arduino projects and automating day-to-day tasks with Python.
           </div>
         </div>
