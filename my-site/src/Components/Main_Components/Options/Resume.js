@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../../../Styles/Options.module.css";
 import { HiOutlineDocument } from "react-icons/hi";
-import resume from "../../../Other/resume.pdf";
+import resume from "../../../Other/Rushi_Notaria_Resume.pdf";
 
 export default function Resume() {
   return (

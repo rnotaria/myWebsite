@@ -12,8 +12,9 @@ export default function MySite() {
       <CoverImage />
       <Options />
       <div className={styles.contentContainer}>
-        <Profile />
-        <Projects />
+        <Construction/>
+        {/* <Profile /> */}
+        {/* <Projects /> */}
       </div>
     </div>
   );

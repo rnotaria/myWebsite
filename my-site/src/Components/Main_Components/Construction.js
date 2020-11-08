@@ -8,7 +8,7 @@ export default function Construction() {
         Thank you for visiting my website!
       </h1>
       <h3 className={styles.profileHeader}>
-        This page is still currently under construction but will be completed
+        This page is currently under construction but will be completed
         soon
       </h3>
     </div>
